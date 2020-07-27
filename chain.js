@@ -1,3 +1,4 @@
+const { trampoline } = require('./fp')
 const { calculateHash } = require("./hash")
 
 function validateChain(chain) {
@@ -11,9 +12,9 @@ function validateChain(chain) {
         const isValidChain = (isValidHash && isPreviousHashValid)
 
         if (!isValidChain) return false
-        else return tce(chain, index - 1)
+        else return () => tce(chain, index - 1)
     }
-    return tce(chain, chain.length - 1)
+    return trampoline(() => tce(chain, chain.length - 1))
 }
 
 module.exports = {
