@@ -1,4 +1,4 @@
-const { trampoline } = require('./fp')
+const { trampoline } = require('../fp')
 const { calculateHash } = require("./hash")
 
 function validateChain(chain) {

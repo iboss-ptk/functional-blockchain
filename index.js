@@ -1,5 +1,5 @@
-const { generateGenesisBlock ,addBlockWithConstraint, constraints } = require('./block')
-const { validateChain } = require('./chain')
+const { generateGenesisBlock ,addBlockWithConstraint, constraints } = require('./blockchain/block')
+const { validateChain } = require('./blockchain/chain')
 
 const addBlock = addBlockWithConstraint(constraints.padZeros(4))
 const chain = [generateGenesisBlock()]

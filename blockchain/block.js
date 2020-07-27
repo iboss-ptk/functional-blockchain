@@ -1,4 +1,4 @@
-const { trampoline } = require('./fp')
+const { trampoline } = require('../fp')
 const { calculateHash, updateHash, nextNonce } = require('./hash')
 
 // The first block in the Blockchain is called "The Genesis Block"
