@@ -1,0 +1,22 @@
+{
+  "name": "functional-blockchain",
+  "version": "1.0.0",
+  "description": "blockchain prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iboss-ptk/functional-blockchain.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "supanat.ptk@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iboss-ptk/functional-blockchain/issues"
+  },
+  "homepage": "https://github.com/iboss-ptk/functional-blockchain#readme"
+}
